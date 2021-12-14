@@ -9,10 +9,15 @@ used = []
 
 display = movie_chosen
 for i in range (len(display)):
-  display = display[0:i] + "_" + display[i+1:]
+
+  display = display[0:i]  + "_" + display[i+1:]
+
   
 
-print (" ".join(display))
+
+movie_display = " ".join(display)
+
+print (movie_chosen[0]+movie_display[1:-1]+movie_chosen[-1])
 
 
 attempts = 0
@@ -34,7 +39,9 @@ while display != movie_chosen:
   print(used)
       
 
-  print(" ".join(display))
+
+  movie_display = " ".join(display)
+  print (movie_chosen[0]+movie_display[1:-1]+movie_chosen[-1])
   attempts = attempts + 1
   
-print("Well done, you guessed the correct movie! " + str(attempts) + " attempts")
+print("Well done, you guessed the correct movie " + str(attempts) + " attempts")
