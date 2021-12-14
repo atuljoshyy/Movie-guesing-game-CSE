@@ -37,4 +37,4 @@ while display != movie_chosen:
   print(" ".join(display))
   attempts = attempts + 1
   
-print("Well done, you guessed right in " + str(attempts) + " attempts")
+print("Well done, you guessed the correct movie! " + str(attempts) + " attempts")
