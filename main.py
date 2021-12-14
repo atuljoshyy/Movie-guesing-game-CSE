@@ -10,7 +10,7 @@ print('''
 Movies=["Dune","Eternals","Venom","spider-man no way home","No time to die","Black panther","Free guy","Jungle cruise","Old","Cruella","Nobody","The suicde squad","The resident evil","Dolittle","The batman","Tenet","The tomorrow war","Mortal kombat","Cinderella","Men in black","Wonder woman 1984","Oblivion","Red notice","The lion king","Blood shot"]
 
 
-movie_chosen=random.choice(Movies)
+movie_chosen=random.choice(Movies).lower()
 ch=''
 for i in movie_chosen:
     if i.isalpha():
@@ -39,8 +39,8 @@ def letters(ch):
         else:
              print(f"'{user_guess}' is not in the movie name 😢")
 def main():
-    a='yes'
-    while a=='yes':
+    a='y'
+    while a=='y':
         print('1. Guess the entire movie name')
         print('2. Guess the movie name letter by letter')
         print('3. Exit')
@@ -56,7 +56,7 @@ def main():
             break
         else:
             print('Invalid choice ❌') 
-        a=input('again?(yes or no)')
+        a=input('again? 🤔 (y/n) : ')
 main()
 
             
